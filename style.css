@@ -1,0 +1,42 @@
+.container {
+  max-width: 400px;
+  margin: 5%auto 0 auto;
+  font-family: Gotham Rounded, sans-serif;
+  border: 2px solid#999;
+}
+#display {
+  text-align: right;
+  height: 50px;
+  line-height: 50px;
+  padding: 16px 8px;
+  font-size: 25px;
+  background: linear-gradient(to right, rgb(157, 187, 190), rgb(153, 214, 214));
+}
+.buttons {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: linear-gradient(to right, rgb(157, 187, 190), rgb(153, 214, 214));
+}
+
+.button {
+  border: 0.5px solid#999;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+#equal {
+  background-color: linear-gradient(
+    to right,
+    rgb(157, 187, 190),
+    rgb(153, 214, 214)
+  );
+
+  grid-column: span 2;
+}
+.button:hover {
+  background-color: #323330;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
